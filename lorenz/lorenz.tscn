@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://c2fxa8ff0xlu0"]
+
+[ext_resource type="Script" uid="uid://ceppt158mxtpn" path="res://lorenz/camera_3d.gd" id="2_65cbo"]
+[ext_resource type="Script" uid="uid://c1jbcmax71pvh" path="res://lorenz/mesh_instance_3d.gd" id="2_b51yl"]
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_b51yl"]
+
+[node name="Node3D" type="Node3D" unique_id=1274655987]
+
+[node name="LabelX" type="Label3D" parent="." unique_id=1969248971]
+text = "X"
+
+[node name="LabelY" type="Label3D" parent="." unique_id=1511828437]
+text = "Y"
+
+[node name="LabelZ" type="Label3D" parent="." unique_id=2095371176]
+text = "Z"
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1741955852 node_paths=PackedStringArray("labelX", "labelY", "labelZ")]
+mesh = SubResource("ImmediateMesh_b51yl")
+script = ExtResource("2_b51yl")
+labelX = NodePath("../LabelX")
+labelY = NodePath("../LabelY")
+labelZ = NodePath("../LabelZ")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=271535166]
+current = true
+script = ExtResource("2_65cbo")
