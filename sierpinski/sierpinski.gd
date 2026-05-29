@@ -21,7 +21,9 @@ func _ready() -> void:
 		Vector2(size.x - 40, size.y - 10),
 	])
 	
-	points.append(size / 2)
+	var start := size / 2
+	start.y -= 50
+	points.append(start)
 	
 	pass # Replace with function body.
 	
