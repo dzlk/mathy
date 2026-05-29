@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cclfmpn3rcrik"]
+
+[ext_resource type="Script" uid="uid://cf23fija44sp5" path="res://sierpinski/sierpinski_3d.gd" id="1_y83ma"]
+
+[node name="Node3D" type="Node3D" unique_id=571168895]
+script = ExtResource("1_y83ma")
