@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://beo6sxbv6mbev"]
+
+[ext_resource type="Script" uid="uid://df6n6o06pxybb" path="res://barnsley/barnsley.gd" id="1_s3ya0"]
+
+[node name="Node2D" type="Node2D" unique_id=938318879]
+script = ExtResource("1_s3ya0")
